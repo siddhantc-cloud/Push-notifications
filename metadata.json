@@ -1,0 +1,6 @@
+{
+  "name": "ZebPay Push Manager",
+  "description": "Enterprise-grade AI generator for ZebPay Power Trades push notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
