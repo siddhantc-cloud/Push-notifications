@@ -1,7 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { GenerateParams } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+});
 
 export const generateNotifications = async (params: GenerateParams) => {
   const { date, category, count, tone, topic, occasion } = params;
